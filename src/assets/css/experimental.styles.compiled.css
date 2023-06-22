@@ -1,0 +1,283 @@
+@supports (height: 100dvh) {
+  @media (min-height: 320px) {
+    html {
+      width: 100dvw;
+      height: 100dvh;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100dvw;
+      height: 100dvh;
+      margin: 0;
+      padding: 0;
+      display: inline;
+    }
+
+    .col {
+      margin: 0;
+      padding: 0;
+    }
+
+    [class^=col-] {
+      margin: 0;
+      padding: 0;
+    }
+
+    [class^=row-] {
+      margin: 0;
+      padding: 0;
+    }
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    #navRow {
+      width: 100dvw;
+      background-color: #066;
+    }
+
+    #displayRow {
+      width: 100dvw;
+    }
+
+    #tabsRow {
+      width: 100%;
+    }
+
+    #iframeRow {
+      width: 100%;
+    }
+
+    #tabsColumn {
+      width: 100%;
+      height: 100%;
+    }
+
+    #iframeColumn {
+      width: 100%;
+      height: 100%;
+    }
+
+    #todoTabsRow {
+      width: 100%;
+      height: 100%;
+    }
+
+    #iframeTabsRow {
+      width: 100%;
+      height: 100%;
+    }
+
+    #todoTabsRow [class^=col] {
+      height: 100%;
+    }
+
+    #iframeTabsRow [class^=col] {
+      height: 100%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: landscape) and (min-width: 1024px) {
+    #navRow {
+      height: 12dvh;
+    }
+
+    #displayRow {
+      height: 88dvh;
+    }
+
+    #navColumn {
+      height: 12dvh;
+    }
+
+    #iconsColumn {
+      height: 12dvh;
+    }
+
+    #tabsRow {
+      height: 10%;
+    }
+
+    #iframeRow {
+      height: 90%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
+    #navRow {
+      height: 12dvh;
+    }
+
+    #displayRow {
+      height: 88dvh;
+    }
+
+    #navColumn {
+      height: 12dvh;
+    }
+
+    #iconsColumn {
+      height: 12dvh;
+    }
+
+    #tabsRow {
+      height: 10%;
+    }
+
+    #iframeRow {
+      height: 90%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: landscape) and (min-width: 576px) and (max-width: 767px) {
+    #navRow {
+      height: 12dvh;
+    }
+
+    #displayRow {
+      height: 88dvh;
+    }
+
+    #navColumn {
+      height: 12dvh;
+    }
+
+    #iconsColumn {
+      height: 12dvh;
+    }
+
+    #tabsRow {
+      height: 10%;
+    }
+
+    #iframeRow {
+      height: 90%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: landscape) and (max-width: 575px) {
+    #navRow {
+      height: 30dvh;
+    }
+
+    #displayRow {
+      height: 70dvh;
+    }
+
+    #navColumn {
+      height: 13dvh;
+    }
+
+    #iconsColumn {
+      height: 17dvh;
+    }
+
+    #tabsRow {
+      height: 15%;
+    }
+
+    #iframeRow {
+      height: 85%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: portrait) and (min-width: 1024px) {
+    #navRow {
+      height: 4dvh;
+    }
+
+    #displayRow {
+      height: 96dvh;
+    }
+
+    #navColumn {
+      height: 4dvh;
+    }
+
+    #iconsColumn {
+      height: 4dvh;
+    }
+
+    #tabsRow {
+      height: 3%;
+    }
+
+    #iframeRow {
+      height: 97%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
+    #navRow {
+      height: 4dvh;
+    }
+
+    #displayRow {
+      height: 96dvh;
+    }
+
+    #navColumn {
+      height: 4dvh;
+    }
+
+    #iconsColumn {
+      height: 4dvh;
+    }
+
+    #tabsRow {
+      height: 3%;
+    }
+
+    #iframeRow {
+      height: 97%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: portrait) and (min-width: 576px) and (max-width: 767px) {
+    #navRow {
+      height: 5dvh;
+    }
+
+    #displayRow {
+      height: 95dvh;
+    }
+
+    #navColumn {
+      height: 5dvh;
+    }
+
+    #iconsColumn {
+      height: 5dvh;
+    }
+
+    #tabsRow {
+      height: 4%;
+    }
+
+    #iframeRow {
+      height: 96%;
+    }
+  }
+  @media (min-height: 320px) and (orientation: portrait) and (max-width: 575px) {
+    #navRow {
+      height: 16dvh;
+    }
+
+    #displayRow {
+      height: 84dvh;
+    }
+
+    #navColumn {
+      height: 7dvh;
+    }
+
+    #iconsColumn {
+      height: 9dvh;
+    }
+
+    #tabsRow {
+      height: 8%;
+    }
+
+    #iframeRow {
+      height: 92%;
+    }
+  }
+}

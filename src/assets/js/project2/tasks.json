@@ -1,0 +1,145 @@
+
+{
+  "tasks": [
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["design"],
+      "fields": {},
+      "body": "Simple and easy-to-use interface",
+      "raw": "(A) Simple and easy-to-use interface @design +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "A"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["design"],
+      "fields": {},
+      "body": "Add new to-dos",
+      "raw": "(A) Add new to-dos @design +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "A"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["design"],
+      "fields": {},
+      "body": "Edit existing to-dos",
+      "raw": "(B) Edit existing to-dos @design +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "B"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["webapp"],
+      "fields": {},
+      "body": "Search functionality by context, project or date",
+      "raw": "(B) Search functionality by context, project or date @webapp +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "B"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["webapp"],
+      "fields": {},
+      "body": "Filtering with context, projects and date",
+      "raw": "(C) Filtering with context, projects and date @webapp +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "C"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["revision"],
+      "fields": {},
+      "body": "One-click filter reset",
+      "raw": "(C) One-click filter reset @revision +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "C"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["ux"],
+      "fields": {},
+      "body": "Filter by completed tasks",
+      "raw": "(A) Filter by completed tasks @ux +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "A"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["design"],
+      "fields": {},
+      "body": "Export",
+      "raw": "(B) Export @design +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "B"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["stockPhotos"],
+      "fields": {},
+      "body": "Open multiple todo.txt files",
+      "raw": "(C) Open multiple todo.txt files @stockPhotos +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "C"
+    },
+    {
+      "isComplete": true,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["webapp"],
+      "fields": {},
+      "body": "Dark theme enabled",
+      "raw": "x 2023-02-04 Dark theme enabled @webapp +javascript +json +html +css +typescript",
+      "index": -1,
+      "completionDate": "2023-02-04T00:00:00.000Z"
+    },
+    {
+      "isComplete": true,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["webapp"],
+      "fields": {},
+      "body": "Rich Shortcuts support",
+      "raw": "x 2023-02-04 Rich Shortcuts support @webapp +javascript +json +html +css +typescript",
+      "index": -1,
+      "completionDate": "2023-02-04T00:00:00.000Z"
+    },
+    {
+      "isComplete": true,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["design"],
+      "fields": {},
+      "body": "Automatically detect supported languages (English, German and Italian)",
+      "raw": "x 2023-02-04 Automatically detect supported languages (English, German and Italian) @design +javascript +json +html +css +typescript",
+      "index": -1,
+      "completionDate": "2023-02-04T00:00:00.000Z"
+    },
+    {
+      "isComplete": true,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["ux"],
+      "fields": {},
+      "body": "TabIndex switching between the fields and buttons",
+      "raw": "x 2023-02-04 TabIndex switching between the fields and buttons @ux +javascript +json +html +css +typescript",
+      "index": -1,
+      "completionDate": "2023-02-04T00:00:00.000Z"
+    },
+    {
+      "isComplete": false,
+      "projects": ["javascript", "json", "html", "css", "typescript"],
+      "contexts": ["revision"],
+      "fields": {},
+      "body": "Auto-linking",
+      "raw": "(C) Auto-linking @revision +javascript +json +html +css +typescript",
+      "index": -1,
+      "priority": "C"
+    }
+  ]
+}

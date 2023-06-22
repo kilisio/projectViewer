@@ -1,0 +1,87 @@
+
+{
+  "tasks": [
+    {
+      "isComplete": false,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "meow",
+      "raw": "(A) 2023-01-24 meow",
+      "index": -1,
+      "priority": "A",
+      "creationDate": "2023-01-24T00:00:00.000Z"
+    },
+    {
+      "isComplete": false,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "this is a new task",
+      "raw": "(A) 2023-01-24 this is a new task",
+      "index": -1,
+      "priority": "A",
+      "creationDate": "2023-01-24T00:00:00.000Z"
+    },
+    {
+      "isComplete": false,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "another task",
+      "raw": "(B) another task ",
+      "index": -1,
+      "priority": "B"
+    },
+    {
+      "isComplete": false,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "blah blah blah",
+      "raw": "(C) blah blah blah",
+      "index": -1,
+      "priority": "C"
+    },
+    {
+      "isComplete": false,
+      "projects": ["project", "test", "jldsjlfs"],
+      "contexts": ["context"],
+      "fields": {},
+      "body": "this is a test task using context and project tags and checking whether it is pared properly using lsjdlfj",
+      "raw": "2023-01-24 this is a test task using context and project tags +project @context and checking whether it is pared properly +test using lsjdlfj +jldsjlfs",
+      "index": -1,
+      "creationDate": "2023-01-24T00:00:00.000Z"
+    },
+    {
+      "isComplete": true,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "just testing this shit",
+      "raw": "x 2023-01-24 just testing this shit",
+      "index": -1,
+      "completionDate": "2023-01-24T00:00:00.000Z"
+    },
+    {
+      "isComplete": true,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "new task",
+      "raw": "x 2023-01-24 new task",
+      "index": -1,
+      "completionDate": "2023-01-24T00:00:00.000Z"
+    },
+    {
+      "isComplete": true,
+      "projects": [],
+      "contexts": [],
+      "fields": {},
+      "body": "task 2",
+      "raw": "x 2023-01-24 task 2",
+      "index": -1,
+      "completionDate": "2023-01-24T00:00:00.000Z"
+    }
+  ]
+}

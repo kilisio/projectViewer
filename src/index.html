@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>projectViewer</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/experimental.styles.compiled.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/iconSet.css">
+    <link rel="stylesheet" href="assets/css/todoTab.css">
+    <link rel="stylesheet" href="assets/css/orientation.css">
+    <link rel="stylesheet" href="assets/css/projectsMenu.css">
+    <link rel="stylesheet" href="assets/css/zoomBar.css">
+    <link rel="stylesheet" href="assets/css/responsiveIframe.css">
+    <link rel="stylesheet" href="assets/css/taskLIst.css">
+</head>
+
+<body>
+    <div class="row" id="navRow">
+        <div class="col-12 col-sm-6 col-md-6" id="navColumn">
+<nav id="navbar" class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+  <div id="navContainer" >
+        <ul class="navList">
+          <li class="nav-item"><div class="nav-link active" data-href="navTodo" role="link">TodoList</div></li>
+          <li class="nav-item"><div class="nav-link" data-href="navDesign" role="link" x-data x-on:click="$store.projectList.display = 'design'">Design</div></li>
+          <li class="nav-item"><div class="nav-link" data-href="navWeb" role="link" x-data x-on:click="$store.projectList.display = 'web'">WebApp</div></li>
+          <li class="nav-item"></li>
+        </ul>
+  </div>
+</nav>
+</div>
+        <div class="col" id="iconsColumn"><div class="screens">
+  <span class="screenIcon phone" role="link">
+    <i class="fas fa-mobile-alt"></i>
+  </span>
+  <span class="screenIcon phablet" role="link">
+    <i class="fas fa-mobile-alt"></i>
+  </span>
+  <span class="screenIcon tablet" role="link">
+    <i class="fas fa-mobile-alt"></i>
+  </span>
+  <span class="screenIcon laptop" role="link"><i class="fas fa-laptop"></i></span>
+  <span class="screenIcon widescreen" role="link"><i class="fas fa-tv"></i></span>
+</div>
+</div>
+    </div>
+    <div class="row" id="displayRow">
+        <div class="col-sm-12" id="displayColumn">
+            <div class="row" id="tabsRow">
+                <div class="col" id="tabsColumn">
+                    <div class="row tabItemsRow todoTabs">
+                        <div class="col-5 col-sm-3"><div class="todoSelect projectsMenuContainer">
+      <template>
+        <option></option>
+      </template>
+  <div class="projectsMenu todoProjectsMenu">
+    <select>
+      <option>Project...</option>
+    </select>
+  </div>
+</div>
+</div>
+                        <div class="col"><div class="todoTabContainer backlog activeTab" data-href="backlog"  role="link" x-data x-on:click="$store.taskList.priority = 'C'">
+    <div class="todoTabIcon"><svg xmlns="http://www.w3.org/2000/svg" width="723.341" height="723.328" viewBox="0 0 542.506 542.496">
+            <path d="M345.02 317.24 139.81 215.92l-31.414-15.512-29.645 32.34 233.31 119.59zM188.54 223.75v-66.148l-65.668 33.73 11.594 5.723zM520.34 158.11v66.973l65.801-32.988zM505.73 146.15V8.75H203.14v222.21l153.88 75.977 148.71-74.551zm-213.08-46.098h129.61v14.523l-129.61.004zm-29.949 120.25h-26.336v-21.953h26.336zm0-51.004h-26.336l-.004-21.953h26.336zm0-51.012h-26.336l-.004-21.957h26.336zm0-51.004h-26.336l-.004-21.957h26.336zm107.11 149.31h-77.156v-14.523h77.156zm61.191-51.012h-138.35v-14.523h138.35zm34.965-102.02h-173.31V49.037h173.31z" style="fill: #cc0;fill-opacity: 1;" transform="translate(-78.751 -8.75)"></path>
+            <path d="M316.71 367.83c-.246.113-.488.168-.742.254-.613.21-1.227.34-1.871.387-.157.008-.305.097-.473.097-.121 0-.234-.078-.36-.086-1.015-.05-2.03-.234-2.984-.726l-196.27-100.6v167.04l234.87 117.05v-216.83l-29.906 31.852c-.656.687-1.433 1.18-2.258 1.562zM395.05 368.48c-.133.008-.246.086-.375.086-.191 0-.367-.113-.559-.121a7.437 7.437 0 0 1-1.953-.43c-.289-.105-.57-.183-.84-.324-.867-.445-1.671-1.016-2.32-1.813l-24.648-30.285v213.48l230.51-114.88-.004-168.76-196.81 102.3c-.953.489-1.976.68-3 .735z" style="fill: #cc0;fill-opacity: 1;" transform="translate(-78.751 -8.75)"></path>
+            <path d="M599.57 201.62 368.43 317.5l28.168 34.613 202.19-105.11 22.469-11.68z" style="fill: #cc0;fill-opacity: 1;" transform="translate(-78.751 -8.75)"></path>
+        </svg></div>
+    <div class="todoTabText"><span>Backlog</span></div>
+</div>
+</div>
+                        <div class="col"><div class="todoTabContainer todo" data-href="todo" role="link" x-data x-on:click="$store.taskList.priority = 'B'">
+    <div class="todoTabIcon"><svg xmlns="http://www.w3.org/2000/svg" width="649.68" height="642.827" viewBox="0 0 487.26 482.12">
+            <path d="M543.87 352.84H106.92V207.15h436.95Zm-409.61-27.344h382.27v-91H134.26Z" style="fill: #cc8500;fill-opacity: 1;" transform="translate(-106.92 -38.94)"></path>
+            <path d="M219.08 220.83h27.344v118.29H219.08ZM594.18 184.57H157.23V38.94h436.95Zm-409.61-27.344h382.27V66.281H184.57Z" style="fill: #cc8500;fill-opacity: 1;" transform="translate(-106.92 -38.94)"></path>
+            <path d="M269.39 52.609h27.344v118.29H269.39ZM543.87 521.06H106.92V375.43h436.95Zm-409.61-27.344h382.27v-90.945H134.26Z" style="fill: #cc8500;fill-opacity: 1;" transform="translate(-106.92 -38.94)"></path>
+            <path d="M219.08 389.1h27.344v118.29H219.08ZM220.39 142.24l-29.695-29.75L210 93.185l10.391 10.391 23.57-23.57 19.359 19.359z" style="fill: #cc8500;fill-opacity: 1;" transform="translate(-106.92 -38.94)"></path>
+        </svg></div>
+    <div class="todoTabText"><span>Todo</span></div>
+</div>
+</div>
+                        <div class="col"><div class="todoTabContainer activated" data-href="active" role="link" x-data x-on:click="$store.taskList.priority = 'A'">
+    <div class="todoTabIcon"><svg xmlns="http://www.w3.org/2000/svg" width="746.671" height="746.666" viewBox="0 0 560.003 559.999">
+            <path fill-rule="evenodd" d="M235.2 429.8c13.301 9.8 27.301 18.199 42.699 24.5l-35 84c-2.102-.7-4.2-2.102-6.3-2.8-18.2-8.4-35-18.2-51.103-29.399-2.101-1.398-3.5-2.8-5.601-4.199zm1.402 9.8L189.704 500.5c15.398 11.199 32.2 21 49.7 28.699L268.8 457.8c-11.902-4.903-22.402-11.2-32.199-18.2zM325.5 467.6c8.398 1.398 16.102 1.398 24.5 1.398s16.801-.699 24.5-1.398l11.898 90.301c-2.102 0-4.898.7-7 .7-9.797.698-19.598 1.398-29.398 1.398s-19.602-.7-29.398-1.399c-2.102 0-4.898-.699-7-.699zm5.602 7.7-9.801 76.3c9.101.7 18.898 1.399 28.699 1.399 9.8 0 19.602-.7 28.699-1.399l-9.801-76.3c-6.297.698-12.598.698-18.898.698-6.3 0-12.602 0-18.898-.699z" style="fill: #900;fill-opacity: 1;" transform="translate(-70)"></path>
+            <path d="M422.1 455c15.398-6.3 29.398-14.699 42.699-24.5l55.301 72.102c-19.602 14.699-40.602 27.301-63 36.398zM499.8 394.8c9.8-13.301 18.199-27.301 24.5-42.699l84 35c-9.102 23.102-21.699 44.102-36.398 63zM537.6 304.5c1.398-8.398 1.398-16.102 1.398-24.5s-.699-16.801-1.398-24.5l90.301-11.898c1.398 11.898 2.102 24.5 2.102 36.398 0 11.898-.7 24.5-2.102 36.398zM525 207.9c-6.3-15.398-14.699-29.398-24.5-42.699l72.102-55.301c14.699 19.602 27.301 40.602 36.398 63zM464.8 130.2c-13.301-9.8-27.301-18.199-42.699-24.5l35-84c23.102 9.102 44.102 21.699 63 36.398zM374.5 92.398C366.8 91.698 358.398 91 350 91s-16.801.699-24.5 1.398L313.602 2.101C325.5.699 337.399-.001 350-.001c12.601 0 24.5.7 36.398 2.102z" style="fill: #900;fill-opacity: 1;" transform="translate(-70)"></path>
+            <path fill-rule="evenodd" d="M175 352.1c6.3 15.398 14.699 29.398 24.5 42.699l-71.398 56c-1.398-2.102-2.8-3.5-4.2-5.602-11.897-16.102-21.698-32.898-29.397-51.102-.7-2.101-2.102-4.199-2.801-6.3zm-3.5 9.098L100.801 390.6c7.7 17.5 17.5 34.3 28.699 49.699l60.898-46.898c-7-9.801-13.297-20.301-18.898-32.203zM277.9 105c-15.398 6.3-29.398 14.699-42.699 24.5l-56-71.398c2.102-1.398 3.5-2.8 5.602-4.2 16.102-11.897 32.898-21.698 51.102-29.397 2.101-.7 4.199-2.102 6.3-2.801zm-9.098-3.5c-11.199 4.898-22.398 11.199-32.199 18.898L189.705 59.5c15.398-11.199 32.2-21 49.7-28.699zM200.2 165.2c-9.8 13.301-18.199 27.301-24.5 42.699l-84-35c.7-2.102 2.102-4.2 2.8-6.3 8.4-18.2 18.2-35 29.399-51.103 1.398-2.101 2.8-3.5 4.199-5.601zm-9.8 1.402L129.5 119.704c-11.199 15.398-21 32.2-28.699 49.7L172.2 198.8c4.903-11.902 11.2-22.402 18.2-32.199zM78.398 251.3c-.7 9.098-1.398 18.898-1.398 28.699 0 9.801.699 19.602 1.398 28.699l76.301-9.8c-.7-6.298-.7-12.599-.7-18.899 0-6.3 0-12.602.7-18.898zm-7-.7C70.698 260.399 70 270.2 70 280s.699 19.602 1.398 29.398c0 2.101.7 4.898.7 7l90.3-11.898c-.699-7.7-1.398-16.102-1.398-24.5s.699-16.801 1.398-24.5L72.101 243.6c0 2.097 0 4.199-.703 7z" style="fill: #900;fill-opacity: 1;" transform="translate(-70)"></path>
+            <path d="M445.2 197.4c-.7-.7-2.102-1.398-2.8-2.102-1.4-.699-2.102-.699-3.5-.699-1.4 0-2.802 0-3.5.7-1.4.699-2.102 1.398-2.802 2.101l-121.1 119c-2.101 1.398-4.199 2.8-7 2.8-2.8 0-4.898-.698-7-2.8l-29.395-29.398c-2.101-1.398-4.199-2.8-7-2.8-2.8 0-4.898.698-7 2.8l-18.199 18.199c-1.398 2.102-2.8 4.2-2.8 7s.699 4.898 2.8 7l61.602 60.898c2.102 1.398 4.2 2.8 7 2.8 2.801 0 4.899-.698 7-2.8l152.6-150.5c.7-.7 1.399-2.102 2.102-2.8.7-1.4.7-2.102.7-3.5 0-1.4 0-2.802-.7-3.5-.7-1.4-1.398-2.102-2.102-2.802z" style="fill: #900;fill-opacity: 1;" transform="translate(-70)"></path>
+        </svg></div>
+    <div class="todoTabText"><span>Active</span></div>
+</div>
+</div>
+                        <div class="col"><div class="todoTabContainer done" data-href="done" role="link" x-data x-on:click="$store.taskList.priority = undefined">
+    <div class="todoTabIcon"><svg xmlns="http://www.w3.org/2000/svg" width="653.328" height="653.328" viewBox="0 0 489.996 489.996">
+            <path d="M244.998 489.996a245.006 245.006 0 0 0 173.24-71.758 245.02 245.02 0 0 0 71.758-173.24c0-64.97-25.812-127.29-71.758-173.24A245.02 245.02 0 0 0 244.998 0a245.018 245.018 0 0 0-173.24 71.758A245.02 245.02 0 0 0 0 244.998a245.242 245.242 0 0 0 71.836 173.16 245.253 245.253 0 0 0 173.16 71.836zm-131.95-255.85a17.511 17.511 0 0 1 24.676 0l64.398 64.398 150.5-144.2v.004a17.507 17.507 0 0 1 12.41-4.918 17.521 17.521 0 0 1 12.266 5.266 17.626 17.626 0 0 1 4.856 12.535 17.63 17.63 0 0 1-5.383 12.316l-162.75 156.1v-.004a16.926 16.926 0 0 1-12.074 4.902 17.2 17.2 0 0 1-12.426-5.074l-76.473-76.652a17.114 17.114 0 0 1 0-24.676z" style="fill: #060;fill-opacity: 1;"></path>
+        </svg></div>
+    <div class="todoTabText"><span>Done</span></div>
+</div>
+</div>
+                    </div>
+                    <div class="row tabItemsRow responsiveTabs hide">
+                        <div class="col-5 col-md-4"><div class="projectsMenuContainer responsiveSelect">
+  <template>
+    <option></option>
+  </template>
+  <div class="projectsMenu responsiveProjectsMenu">
+    <select>
+      <option>Project...</option>
+    </select>
+  </div>
+</div>
+</div>
+                        <div class="col-2 col-sm-1 col-md-2 col-xxl-1"><div class="orientationContainer" data-orientation='portrait'>
+    <i class="fas fa-mobile-alt"></i>
+</div>
+</div>
+                        <div class="col"><div class="zoomBarContainer">
+  <div class="zoomBar">
+    <div class="zoomFill"></div>
+    <div class="zoomControl zoomDot"></div>
+  </div>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="iframeRow">
+                <div class="col" id="iframeColumn">
+                    <div class="contentContainer"><div class="taskList" x-data data-priority="C" data-category="backlog">
+  <template x-for="task in $store.taskList.tasks()">
+    <template
+      x-if="task.priority == $store.taskList.priority"
+    >
+      <div class="task">
+        <div class="taskContext" x-text="task.contexts"></div>
+        <div class="taskText" x-text="task.body"></div>
+        <div class="taskTags" x-text="task.projects"></div>
+      </div>
+    </template>
+  </template>
+</div>
+<div class="responsiveIframe hide" x-data>
+  <iframe x-bind:src="$store.projectList.path()" frameborder="0"></iframe>
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/alpine.min.js"></script>
+    <script src="assets/js/nav.mjs" type="module"></script>
+    <script src="assets/js/taskList.mjs" type="module"></script>
+    <script src="assets/js/responsiveProjectsMenu.mjs" type="module"></script>
+    <script src="assets/js/todoProjectsMenu.mjs" type="module"></script>
+    <script src="assets/js/iconset.mjs" type="module"></script>
+    <script src="assets/js/orientation.mjs" type="module"></script>
+    <script src="assets/js/zoomBar.mjs" type="module"></script>
+    <script src="assets/js/store.mjs" type="module"></script>
+</body>
+
+</html>
