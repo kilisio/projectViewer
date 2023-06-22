@@ -1,7 +1,7 @@
 {
   "name": "projectViewer",
   "title": "projectViewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple project viewer for freelance projects",
   "author": "kilisio <pkilisio@gmail.com> (kilisio.deno.dev)",
   "category": "DeveloperTool",
