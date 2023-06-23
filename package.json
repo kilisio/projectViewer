@@ -1,7 +1,7 @@
 {
   "name": "projectViewer",
   "title": "projectViewer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple project viewer for freelance projects",
   "author": "kilisio <pkilisio@gmail.com> (kilisio.deno.dev)",
   "category": "DeveloperTool",
@@ -9,16 +9,16 @@
   "devDependencies": {
     "@commitlint/cli": "~17.2.0",
     "@commitlint/config-conventional": "~17.2.0",
+    "@oakserver/oak": "^12.5.0",
     "commitizen": "~4.2.5",
     "cz-conventional-changelog": "~3.3.0",
     "esm": "^3.2.25",
     "husky": "~8.0.2",
-    "nps": "~5.10.0",
-    "serve": "^14.2.0"
+    "nps": "~5.10.0"
   },
   "dependencies": {},
   "scripts": {
-    "dev": "serve src",
+    "dev": "npx ts-node src/serve.ts",
     "rls": "nps rls",
     "feat": "nps feat",
     "fix": "nps fix"
