@@ -1,7 +1,7 @@
 {
   "name": "projectViewer",
   "title": "projectViewer",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Simple project viewer for freelance projects",
   "author": "kilisio <pkilisio@gmail.com> (kilisio.deno.dev)",
   "category": "DeveloperTool",
@@ -19,6 +19,7 @@
   "dependencies": {},
   "scripts": {
     "dev": "npx ts-node src/serve.ts",
+    "deploy": "sh -c ./deploy.sh",
     "rls": "nps rls",
     "feat": "nps feat",
     "fix": "nps fix"
