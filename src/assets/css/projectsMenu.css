@@ -4,25 +4,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #fff
 }
-
 .projectsMenu {
   position: relative;
   width: 80%;
   display: flex;
   justify-content: left;
   align-items: center;
-  border: 2px solid #004d4d;
+  border: 2px solid #004d4d
 }
-
 .projectsMenu select {
-  display: none;
+  display: none
 }
-
 .projectsMenu .select-selected {
   background-color: #fff;
-  color: #003333;
+  color: #033;
   cursor: pointer;
   width: 90%;
   height: 100%;
@@ -32,9 +29,8 @@
   border: none;
   white-space: nowrap;
   overflow: hidden;
-  user-select: none;
+  user-select: none
 }
-
 .projectsMenu .select-selected::after {
   content: "";
   width: 0;
@@ -44,21 +40,18 @@
   border-width: 8px;
   border-style: solid;
   border-color: #004d4d transparent transparent;
-  margin-top: 8px;
+  margin-top: 8px
 }
-
 .projectsMenu .select-selected.select-arrow-active::after {
   border-color: transparent transparent #004d4d;
-  margin-bottom: 16px;
+  margin-bottom: 16px
 }
-
 .projectsMenu .select-items * {
-  padding: 3px;
+  padding: 3px
 }
-
 .projectsMenu .select-items {
-  color: #fff;
-  background-color: #004d4d;
+  color: #004d4d;
+  background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
@@ -68,23 +61,19 @@
   left: 0;
   right: 0;
   z-index: 99;
-  user-select: none;
+  user-select: none
 }
-
 .projectsMenu .select-hide {
-  display: none;
+  display: none
 }
-
 .projectsMenu .same-as-selected {
-  background-color: #fff;
-  color: #003333;
+  background-color: #033;
+  color: #fff
 }
-
 .projectsMenu .select-items div:hover {
   background-color: #099;
-  color: #003333;
+  color: #033
 }
-
 @media (min-width:1366px) {
   .projectsMenu {
     height: 60%;
@@ -92,24 +81,17 @@
     padding-right: 10px;
     border-radius: 10px;
     border: 2px solid #004d4d;
-    font-size: 22px;
+    font-size: 22px
   }
-}
-
-@media (min-width:1366px) {
   .projectsMenu .select-selected::after {
     right: 18px;
     border-width: 8px;
-    margin-top: 8px;
+    margin-top: 8px
   }
-}
-
-@media (min-width:1366px) {
   .projectsMenu .select-selected.select-arrow-active::after {
-    margin-bottom: 16px;
+    margin-bottom: 16px
   }
 }
-
 @media (min-width:1024px) and (max-width:1365px) {
   .projectsMenu {
     height: 60%;
@@ -117,24 +99,17 @@
     padding-right: 8px;
     border-radius: 8px;
     font-size: 18px;
-    border: 2px solid #004d4d;
+    border: 2px solid #004d4d
   }
-}
-
-@media (min-width:1024px) and (max-width:1365px) {
   .projectsMenu .select-selected::after {
     right: 12px;
     border-width: 6px;
-    margin-top: 6px;
+    margin-top: 6px
   }
-}
-
-@media (min-width:1024px) and (max-width:1365px) {
   .projectsMenu .select-selected.select-arrow-active::after {
-    margin-bottom: 12px;
+    margin-bottom: 12px
   }
 }
-
 @media (min-width:768px) and (max-width:1023px) {
   .projectsMenu {
     height: 70%;
@@ -142,24 +117,17 @@
     padding-right: 6px;
     border-radius: 6px;
     font-size: 16px;
-    border: 2px solid #004d4d;
+    border: 2px solid #004d4d
   }
-}
-
-@media (min-width:768px) and (max-width:1023px) {
   .projectsMenu .select-selected::after {
     right: 8px;
     border-width: 5px;
-    margin-top: 5px;
+    margin-top: 5px
   }
-}
-
-@media (min-width:768px) and (max-width:1023px) {
   .projectsMenu .select-selected.select-arrow-active::after {
-    margin-bottom: 10px;
+    margin-bottom: 10px
   }
 }
-
 @media (min-width:576px) and (max-width:767px) {
   .projectsMenu {
     height: 70%;
@@ -167,24 +135,17 @@
     padding-right: 6px;
     border-radius: 6px;
     font-size: 14px;
-    border: 1px solid #004d4d;
+    border: 1px solid #004d4d
   }
-}
-
-@media (min-width:576px) and (max-width:767px) {
   .projectsMenu .select-selected::after {
     right: 9px;
     border-width: 4px;
-    margin-top: 4px;
+    margin-top: 4px
   }
-}
-
-@media (min-width:576px) and (max-width:767px) {
   .projectsMenu .select-selected.select-arrow-active::after {
-    margin-bottom: 8px;
+    margin-bottom: 8px
   }
 }
-
 @media (max-width:575px) {
   .projectsMenu {
     height: 65%;
@@ -192,27 +153,17 @@
     padding-right: 4px;
     border-radius: 4px;
     font-size: 12px;
-    border: 1px solid #004d4d;
+    border: 1px solid #004d4d
   }
-}
-
-@media (max-width:575px) {
   .projectsMenu .select-selected {
-    width: 85%;
+    width: 85%
   }
-}
-
-@media (max-width:575px) {
   .projectsMenu .select-selected::after {
     right: 6px;
     border-width: 4px;
-    margin-top: 4px;
+    margin-top: 4px
   }
-}
-
-@media (max-width:575px) {
   .projectsMenu .select-selected.select-arrow-active::after {
-    margin-bottom: 8px;
+    margin-bottom: 8px
   }
 }
-
