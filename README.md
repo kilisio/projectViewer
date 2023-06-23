@@ -7,7 +7,7 @@ Simple project viewer for freelancers created using bootstrap studio
 ## How To:
 
     npm install
-    npm run serve
+    npm run dev
 
 # LICENSE
 Copyright © 2023 Patrick Kilisio.
