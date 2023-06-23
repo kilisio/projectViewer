@@ -1,0 +1,21 @@
+#component2 {
+  font-size: 24px;
+}
+
+@media (min-width: 438px) {
+  #component2 {
+    color: purple;
+  }
+}
+
+@media (min-width: 540px) {
+  #component2 {
+    color: orange;
+  }
+}
+
+@media (min-width: 768px) {
+  #component2 {
+    color: green;
+  }
+}

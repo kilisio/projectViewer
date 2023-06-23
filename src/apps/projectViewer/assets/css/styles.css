@@ -1,0 +1,389 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.hide {
+  display: none!important;
+}
+
+.col {
+  margin: 0;
+  padding: 0;
+}
+
+[class^=col-] {
+  margin: 0;
+  padding: 0;
+}
+
+[class^=row-] {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+[role=link] {
+  cursor: pointer;
+}
+
+#navRow {
+  width: 100vw;
+  background-color: #066;
+}
+
+#displayRow {
+  width: 100vw;
+}
+
+#tabsRow {
+  width: 100%;
+}
+
+#iframeRow {
+  width: 100%;
+}
+
+#tabsColumn {
+  width: 100%;
+  height: 100%;
+}
+
+#iframeColumn {
+  width: 100%;
+  height: 100%;
+}
+
+#iframeTabsRow {
+  width: 100%;
+  height: 100%;
+}
+
+#iframeTabsRow [class^=col] {
+  height: 100%;
+}
+
+.tabItemsRow {
+  width: 100%;
+  height: 100%;
+}
+
+.tabItemsRow [class^=col] {
+  height: 100%;
+}
+
+#iframeColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer {
+  width: 97%;
+  height: 97%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  #navRow {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  #displayRow {
+    height: 88vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  #navColumn {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  #iconsColumn {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  #tabsRow {
+    height: 10%;
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  #iframeRow {
+    height: 90%;
+  }
+}
+
+@media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+  #navRow {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+  #displayRow {
+    height: 88vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+  #navColumn {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+  #iconsColumn {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+  #tabsRow {
+    height: 10%;
+  }
+}
+
+@media (orientation:landscape) and (min-width:768px) and (max-width:1023px) {
+  #iframeRow {
+    height: 90%;
+  }
+}
+
+@media (orientation:landscape) and (min-width:576px) and (max-width:767px) {
+  #navRow {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:576px) and (max-width:767px) {
+  #displayRow {
+    height: 88vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:576px) and (max-width:767px) {
+  #navColumn {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:576px) and (max-width:767px) {
+  #iconsColumn {
+    height: 12vh;
+  }
+}
+
+@media (orientation:landscape) and (min-width:576px) and (max-width:767px) {
+  #tabsRow {
+    height: 10%;
+  }
+}
+
+@media (orientation:landscape) and (min-width:576px) and (max-width:767px) {
+  #iframeRow {
+    height: 90%;
+  }
+}
+
+@media (orientation:landscape) and (max-width:575px) {
+  #navRow {
+    height: 30vh;
+  }
+}
+
+@media (orientation:landscape) and (max-width:575px) {
+  #displayRow {
+    height: 70vh;
+  }
+}
+
+@media (orientation:landscape) and (max-width:575px) {
+  #navColumn {
+    height: 13vh;
+  }
+}
+
+@media (orientation:landscape) and (max-width:575px) {
+  #iconsColumn {
+    height: 17vh;
+  }
+}
+
+@media (orientation:landscape) and (max-width:575px) {
+  #tabsRow {
+    height: 15%;
+  }
+}
+
+@media (orientation:landscape) and (max-width:575px) {
+  #iframeRow {
+    height: 85%;
+  }
+}
+
+@media (orientation:portrait) and (min-width:1024px) {
+  #navRow {
+    height: 4vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:1024px) {
+  #displayRow {
+    height: 96vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:1024px) {
+  #navColumn {
+    height: 4vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:1024px) {
+  #iconsColumn {
+    height: 4vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:1024px) {
+  #tabsRow {
+    height: 3%;
+  }
+}
+
+@media (orientation:portrait) and (min-width:1024px) {
+  #iframeRow {
+    height: 97%;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
+  #navRow {
+    height: 4vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
+  #displayRow {
+    height: 96vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
+  #navColumn {
+    height: 4vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
+  #iconsColumn {
+    height: 4vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
+  #tabsRow {
+    height: 3%;
+  }
+}
+
+@media (orientation:portrait) and (min-width:768px) and (max-width:1023px) {
+  #iframeRow {
+    height: 97%;
+  }
+}
+
+@media (orientation:portrait) and (min-width:576px) and (max-width:767px) {
+  #navRow {
+    height: 5vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:576px) and (max-width:767px) {
+  #displayRow {
+    height: 95vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:576px) and (max-width:767px) {
+  #navColumn {
+    height: 5vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:576px) and (max-width:767px) {
+  #iconsColumn {
+    height: 5vh;
+  }
+}
+
+@media (orientation:portrait) and (min-width:576px) and (max-width:767px) {
+  #tabsRow {
+    height: 4%;
+  }
+}
+
+@media (orientation:portrait) and (min-width:576px) and (max-width:767px) {
+  #iframeRow {
+    height: 96%;
+  }
+}
+
+@media (orientation:portrait) and (max-width:575px) {
+  #navRow {
+    height: 16vh;
+  }
+}
+
+@media (orientation:portrait) and (max-width:575px) {
+  #displayRow {
+    height: 84vh;
+  }
+}
+
+@media (orientation:portrait) and (max-width:575px) {
+  #navColumn {
+    height: 7vh;
+  }
+}
+
+@media (orientation:portrait) and (max-width:575px) {
+  #iconsColumn {
+    height: 9vh;
+  }
+}
+
+@media (orientation:portrait) and (max-width:575px) {
+  #tabsRow {
+    height: 8%;
+  }
+}
+
+@media (orientation:portrait) and (max-width:575px) {
+  #iframeRow {
+    height: 92%;
+  }
+}
+
