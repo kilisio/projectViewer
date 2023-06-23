@@ -2,6 +2,10 @@
 
 Simple project viewer for freelancers created using bootstrap studio
 
+![Project Viewer](doc/assets/images/projectViewer.png)
+
+## Demo
+
 >[Demo](https://project-viewer.deno.dev/)
 
 ## How To:
