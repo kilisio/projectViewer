@@ -1,12 +1,12 @@
 {
   "name": "projectViewer",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "lockfileVersion": 2,
   "requires": true,
   "packages": {
     "": {
       "name": "projectViewer",
-      "version": "0.2.9",
+      "version": "0.2.10",
       "license": "MIT",
       "devDependencies": {
         "@commitlint/cli": "~17.2.0",
