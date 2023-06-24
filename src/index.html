@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>viewer</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/experimental.styles.compiled.css">
-    <link rel="stylesheet" href="assets/css/nav.css">
-    <link rel="stylesheet" href="assets/css/iconSet.css">
-    <link rel="stylesheet" href="assets/css/orientation.css">
-    <link rel="stylesheet" href="assets/css/projectsMenu.css">
-    <link rel="stylesheet" href="assets/css/zoomBar.css">
-    <link rel="stylesheet" href="assets/css/responsiveIframe.css">
-</head>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/experimental.styles.compiled.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/iconSet.css" />
+    <link rel="stylesheet" href="assets/css/orientation.css" />
+    <link rel="stylesheet" href="assets/css/projectsMenu.css" />
+    <link rel="stylesheet" href="assets/css/zoomBar.css" />
+    <link rel="stylesheet" href="assets/css/responsiveIframe.css" />
+  </head>
 
-<body>
+  <body>
     <div class="row" id="navRow">
-        <div class="col-12 col-sm-6 col-md-6" id="navColumn"><nav id="navbar" class="bg-dark navbar navbar-dark navbar-expand-md py-3">
-  <div id="navContainer">
-    <ul class="navList">
-      <li class="nav-item">
-        <div class="nav-link active">
-          <span>PROJECT VIEWER</span>
+      <div class="col-12 col-sm-6 col-md-6" id="navColumn">
+        <nav
+          id="navbar"
+          class="bg-dark navbar navbar-dark navbar-expand-md py-3"
+        >
+          <div id="navContainer">
+            <ul class="navList">
+              <li class="nav-item">
+                <div class="nav-link active">
+                  <span>PROJECT VIEWER</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col" id="iconsColumn">
+        <div class="screens">
+          <span class="screenIcon phone" role="link">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+          <span class="screenIcon phablet" role="link">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+          <span class="screenIcon tablet" role="link">
+            <i class="fas fa-mobile-alt"></i>
+          </span>
+          <span class="screenIcon laptop" role="link"
+            ><i class="fas fa-laptop"></i
+          ></span>
+          <span class="screenIcon widescreen" role="link"
+            ><i class="fas fa-tv"></i
+          ></span>
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-</div>
-        <div class="col" id="iconsColumn"><div class="screens">
-  <span class="screenIcon phone" role="link">
-    <i class="fas fa-mobile-alt"></i>
-  </span>
-  <span class="screenIcon phablet" role="link">
-    <i class="fas fa-mobile-alt"></i>
-  </span>
-  <span class="screenIcon tablet" role="link">
-    <i class="fas fa-mobile-alt"></i>
-  </span>
-  <span class="screenIcon laptop" role="link"><i class="fas fa-laptop"></i></span>
-  <span class="screenIcon widescreen" role="link"><i class="fas fa-tv"></i></span>
-</div>
-</div>
+      </div>
     </div>
     <div class="row" id="displayRow">
-        <div class="col-sm-12" id="displayColumn">
-            <div class="row" id="tabsRow">
-                <div class="col" id="tabsColumn">
-                    <div class="row tabItemsRow responsiveTabs">
-                        <div class="col-5 col-md-4"><div class="projectsMenuContainer responsiveSelect">
-  <template>
-    <option></option>
-  </template>
-  <div class="projectsMenu responsiveProjectsMenu">
-    <select>
-      <option>Project...</option>
-    </select>
-  </div>
-</div>
-</div>
-                        <div class="col-2 col-sm-1 col-md-2 col-xxl-1"><div class="orientationContainer" data-orientation='portrait'>
-    <i class="fas fa-mobile-alt"></i>
-</div>
-</div>
-                        <div class="col"><div class="zoomBarContainer">
-  <div class="zoomBar">
-    <div class="zoomFill"></div>
-    <div class="zoomControl zoomDot"></div>
-  </div>
-</div>
-</div>
-                    </div>
+      <div class="col-sm-12" id="displayColumn">
+        <div class="row" id="tabsRow">
+          <div class="col" id="tabsColumn">
+            <div class="row tabItemsRow responsiveTabs">
+              <div class="col-5 col-md-4">
+                <div class="projectsMenuContainer responsiveSelect">
+                  <template>
+                    <option></option>
+                  </template>
+                  <div class="projectsMenu responsiveProjectsMenu">
+                    <select>
+                      <option>Project...</option>
+                    </select>
+                  </div>
                 </div>
-            </div>
-            <div class="row" id="iframeRow">
-                <div class="col" id="iframeColumn">
-                    <div class="contentContainer"><div class="responsiveIframe" x-data>
-  <iframe x-bind:src="$store.projectList.path()" frameborder="0"></iframe>
-</div>
-</div>
+              </div>
+              <div class="col-2 col-sm-1 col-md-2 col-xxl-1">
+                <div class="orientationContainer" data-orientation="portrait">
+                  <i class="fas fa-mobile-alt"></i>
                 </div>
+              </div>
+              <div class="col">
+                <div class="zoomBarContainer">
+                  <div class="zoomBar">
+                    <div class="zoomFill"></div>
+                    <div class="zoomControl zoomDot"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="row" id="iframeRow">
+          <div class="col" id="iframeColumn">
+            <div class="contentContainer">
+              <div class="responsiveIframe" x-data>
+                <iframe
+                  x-bind:src="$store.projectList.path()"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/alpine.min.js"></script>
@@ -93,6 +111,5 @@
     <script src="assets/js/orientation.mjs" type="module"></script>
     <script src="assets/js/zoomBar.mjs" type="module"></script>
     <script src="assets/js/store.mjs" type="module"></script>
-</body>
-
+  </body>
 </html>
